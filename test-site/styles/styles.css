@@ -26,5 +26,12 @@ body {
 
 img {
     display: block;
-    margin: 0 auto;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div {
+    font-size: 14px;
+    margin-top: 18px;
 }
