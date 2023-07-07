@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: black;
+}
+
+li a {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+p.unordered {
+    text-align: left;
+    margin-left: 15px;
+    width: 200px;
+    border: 5px solid blue;
+    background-color: lightblue;
+}
+
+p.ordered {
+    text-align: left;
+    margin-left: 15px;
+    width: 200px;
+    border: 5px solid green;
+    background-color: lightgreen;
+}
+
+div {
+    margin-left: 35px;
+}
+ 
+a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+a:active {
+    background-color: purple;
+}

@@ -1,0 +1,34 @@
+h1 {
+    color: red;
+
+}
+
+h2 {
+    color: green;
+    text-align: right;
+}
+h3 , h4 {
+    text-align: center;
+    color: blue;
+}
+
+.left {
+    color: darkturquoise;
+    font-style: italic;
+    border: 2px solid royalblue;
+    text-align: left;
+}
+
+.center {
+    color: darkolivegreen;
+    text-align: center;
+    font-weight: bold;
+    border: 3px dotted coral;
+}
+
+.right {
+    color: darkmagenta;
+    text-align: right;
+    font-size: large;
+    border: 4px dashed yellow;
+}
