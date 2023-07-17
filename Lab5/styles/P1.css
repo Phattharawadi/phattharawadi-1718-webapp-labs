@@ -3,3 +3,18 @@ p {
     font-weight: bold;
     font-size: 20px;
 }
+
+  /* Styles for desktop screens */
+@media only screen and (min-width: 768px) {
+    /* Add your desktop styles here */
+}
+
+  /* Styles for tablet screens */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Add your tablet styles here */
+}
+
+  /* Styles for mobile screens */
+@media only screen and (max-width: 480px) {
+    /* Add your mobile styles here */
+}
