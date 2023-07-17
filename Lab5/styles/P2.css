@@ -1,0 +1,24 @@
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+  /* Styles for desktop screens */
+@media only screen and (min-width: 1025px) {
+  /* Add your desktop styles here */
+}
+  
+  /* Styles for iPads (portrait mode) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Add your iPad (portrait mode) styles here */
+}
+  
+  /* Styles for iPads (landscape mode) */
+@media only screen and (min-width: 1025px) and (orientation: landscape) {
+  /* Add your iPad (landscape mode) styles here */
+}
+  
+  /* Styles for mobile screens */
+@media only screen and (max-width: 380px) {
+    /* Add your mobile styles here */
+}
