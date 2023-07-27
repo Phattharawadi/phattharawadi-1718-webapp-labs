@@ -1,0 +1,81 @@
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #00539f;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+img {
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div {
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+#heading {
+    font-size: 20;
+    color: blue;
+}
+
+.popular {
+    border: 4px dotted red;
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+/* Add your CSS styles for iPhone5 in portrait here */
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+/* Add your CSS styles for iPhone5 in landscape here */
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) {
+/* Add your CSS styles for iPad in portrait here */
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) {
+/* Add your CSS styles for iPad in landscape here */
+}
+

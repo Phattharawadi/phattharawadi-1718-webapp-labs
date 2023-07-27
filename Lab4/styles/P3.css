@@ -1,0 +1,89 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+  
+.item1 {
+    grid-column: 1 / span 4;
+    background-color: mediumaquamarine;
+    padding: 20px;
+    color: white;
+}
+.item2 {
+    grid-column: 1 / span 4;
+    background-color: gray;
+    padding: 0px;
+    text-align: left;
+    color: white;
+}
+.item3 {
+    grid-column: span 1;
+    grid-row: span 3;
+    background-color: rgb(190, 187, 187);
+    padding: 50px;
+    text-align: left;
+    color: black;
+}
+.item4 {
+    grid-column: span 3;
+    background-color: moccasin;
+    padding: 40px;
+    text-align: left;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+li a {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    background-color: rgb(210, 214, 213);
+    color: black;
+    text-align: center;
+}
+
+a:active {
+    background-color: rgb(154, 212, 187);
+}
+
+/* iPhone SE 2nd generation in Portrait */
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 667px) 
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+/* Insert styles here */
+}
+
+/* iPhone SE 2nd generation in Landscape */
+@media only screen 
+  and (device-width: 375px) 
+  and (device-height: 667px) 
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+/* Insert styles here */
+}
