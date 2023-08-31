@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>KKU Engineer</title>
+    </head>
+    <body>
+        <section>
+            <img src="https://building.kku.ac.th/wp-content/uploads/2019/08/Th_color.png" alt="KKU">
+            <p>Here we will add a link to the 
+                <a href="http://www.kku.ac.th">KKU</a></p>
+        </section>
+        <script>
+            var para = document.querySelector('p');
+            var newText = document.createElement("text");
+            para.textContent = "We hope you enjoy learning";
+        
+            var newPhoto = document.querySelector("img");
+            newPhoto.src = "https://www.en.kku.ac.th/web/wp-content/uploads/2018/06/C-2-of-23-cccccc.jpg"
+            newPhoto.addEventListener("click" , function() {
+                document.location.href = "https://www.en.kku.ac.th"
+            })
+
+            para.style.backgroundColor = "black";
+            para.style.color = "white";
+            para.style.padding = "10px";
+            para.style.width = "560px";
+            para.style.textAlign = "center";
+
+            newPhoto.style.width = "580px";
+            newPhoto.style.height = "300px"
+            
+        </script>
+</html>
