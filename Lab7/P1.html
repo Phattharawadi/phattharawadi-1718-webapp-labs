@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>GitHub User Info</title>
+    <link rel="stylesheet" href="Styles/P1.css">
+  </head>
+  <body>
+    <h1 id="username"></h1>
+    <img id="avatar" alt="User Avatar" />
+
+    <script>
+      const username = "Phattharawadi Ngamtakhu"; 
+      const apiURL = "https://api.github.com/users/Phattharawadi";
+
+      // Fetch user info from GitHub API
+      fetch(apiURL)
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          // Create a link element
+          const link = document.createElement("a");
+          link.href = data.html_url;
+          link.target = "_blank";
+          link.textContent = data.name || username;
+
+          // Append link to the username h1 element
+          const usernameElement = document.getElementById("username");
+          usernameElement.appendChild(link);
+
+          // Set the avatar URL
+          const avatarElement = document.getElementById("avatar");
+          avatarElement.src = data.avatar_url;
+        });
+    </script>
+  </body>
+</html>
