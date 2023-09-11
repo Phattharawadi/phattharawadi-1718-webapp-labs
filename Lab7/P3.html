@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parse Places</title>
+    <style>
+        .restaurant {
+            color: green;
+        }
+
+        .location {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="places"></div>
+
+    <script>
+        fetch("places.json")
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                const results = data.results;
+                let outputPlaces = "";
+
+                results.forEach((info, index) => {
+                    const geometry = info.geometry;
+                    const location = geometry.location;
+                    const restaurant = info.name;
+                    const lat = location.lat;
+                    const lng = location.lng;
+
+                    outputPlaces += (index + 1) + ". <span class='restaurant'>name = " + restaurant
+                        + "</span><br>   <span class='location'>   location = " + lat + "  " + lng + "</span><br>";
+                });
+
+                document.getElementById("places").innerHTML = outputPlaces;
+            })
+            .catch((error) => {
+            console.error("Error fetching and parsing students.json:", error);
+          });
+    </script>
+</body>
+
+</html>

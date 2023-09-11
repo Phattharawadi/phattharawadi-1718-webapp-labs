@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Parse Students File</title>
+  </head>
+  <body>
+    <h2>Reading Students Information</h2>
+    <ol id="studentsOutput"></ol>
+
+    <script>
+      function fetchAndDisplayStudents() {
+        fetch("students.json")
+          .then((response) => response.json())
+          .then((data) => {
+            let outputDiv = document.getElementById("studentsOutput");
+
+            data.wclass.forEach((entry) => {
+              let student = entry.student;
+
+              // Extract data from student object
+              let id = student["@attributes"].id;
+              let name = student.name;
+              let skills = student.skill;
+
+              let studentInfo = `
+                            <li>
+                                <p>${id} <strong>${name}</strong> has skills <i>${skills}</i></p>
+                            </li>
+                        `;
+
+              outputDiv.innerHTML += studentInfo;
+            });
+          })
+          .catch((error) => {
+            console.error("Error fetching and parsing students.json:", error);
+          });
+      }
+      window.onload = fetchAndDisplayStudents;
+    </script>
+  </body>
+</html>

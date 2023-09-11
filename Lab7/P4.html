@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fetch-jsonplaceholder</title>
+</head>
+<body>
+    <h1>Adding a new post</h1>
+    <p id="result"></p>
+    <script>
+        function addPost() {
+            // Define the values for the new post
+            const titleValue = "Volleyball game this evening!";
+            const bodyValue = "The game is between Thailand and Vietnam.";
+            const userIdValue = 11;
+
+            // Use Fetch API to send POST request
+            fetch('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    title: titleValue,
+                    body: bodyValue,
+                    userId: userIdValue
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultElement = document.getElementById("result");
+                const title = data.title;
+                const body = data.body;
+                const userId = data.userId;
+                const id = data.id;
+                const paragraph = `{"userId":${userId}, "title":"${title}", "body":"${body}", "id":${id}}<br> The new post has title as ${title} and body as ${body}.`;
+                resultElement.innerHTML = paragraph;
+            });
+        }
+
+        // Call the function immediately when the page loads
+        addPost();
+    </script>
+</body>
+</html>
