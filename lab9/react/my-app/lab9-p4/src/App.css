@@ -1,0 +1,9 @@
+/* App.css */
+li {
+  list-style-type: decimal;
+  margin-bottom: 16px;
+}
+
+li img {
+  margin-right: 20px;
+}
