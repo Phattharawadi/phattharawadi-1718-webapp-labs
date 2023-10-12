@@ -1,0 +1,75 @@
+.app-container {
+  text-align: center;
+  position: relative;
+}
+
+.app-container img {
+  max-width: 20%;
+  height: auto;
+}
+
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  padding: 20 20px; /* Added padding on the left and right to prevent buttons from touching the screen edge */
+}
+
+.under-image-button {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; /* Set to relative so the followers text displays on the button */
+}
+
+.follower-container {
+  position: fixed;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.follower-text {
+  margin-left: 20px;
+  margin-top: 15px; /* To move the text down a bit */
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.app-button {
+  height: auto;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.app-button:hover {
+  opacity: 0.9;
+}
+
+.orange-button {
+  background-color: orange;
+}
+
+.red-button {
+  background-color: red;
+}
+
+.lightblue-button {
+  background-color: lightblue;
+}
+
+.greenyellow-button {
+  background-color: greenyellow;
+}
